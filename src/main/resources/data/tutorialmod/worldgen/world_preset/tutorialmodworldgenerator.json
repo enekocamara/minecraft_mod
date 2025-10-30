@@ -1,0 +1,20 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "tutorialmod:dimension/continental",
+      "generator": {
+        "type": "tutorialmod:tutorialmodworldgenerator",
+        "height": 100,
+        "min_y": 0,
+        "biome_source": {
+          "type": "minecraft:fixed",
+          "biome": "tutorialmod:biome/empty"
+        },
+        "sea_level": 64,
+        "world_height": 200,
+        "custom_block": "minecraft:stone"
+      }
+    }
+  },
+  "legacy_custom_options": ""
+}

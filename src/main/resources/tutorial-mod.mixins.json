@@ -1,0 +1,28 @@
+{
+	"required": true,
+	"package": "net.enhalo.tutorialmod.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin",
+        "MixinMinecraftServer",
+        "ChunkGeneratorMixin",
+        "WorldTabMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	},
+   "entrypoints": {
+     "main" : [
+       "net.enhalo.tutorialmod.TutorialMod"
+     ],
+     "client" : [
+       "net.enhalo.tutorialmod.TutorialModClient"
+     ],
+     "fabric-datagen": [
+       "net.enhalo.tutorialmod.TutorialModDataGenerator"
+     ]
+   }
+}
